@@ -1,0 +1,56 @@
+{
+    "name": "gitbook-plugin-pagefooter-freedom",
+    "description": "定制每篇文章的页脚, 可以添加版权和显示文件修改时间. 协同创作时, 版权也可以用于标记作者.",
+    "main": "index.js",
+    "version": "0.0.1",
+    "author": {
+        "name": "suranyi",
+        "email": "suranyi.sysu@gmail.com"
+    },
+    "keywords": [
+        "gitbook",
+        "gitbook-plugin",
+        "footer",
+        "modification",
+        "copyright"
+    ],
+    "engines": {
+        "gitbook": ">=2.0.0"
+    },
+    "homepage": "https://github.com/zhj3618/gitbook-plugin-pagefooter-freedom",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zhj3618/gitbook-plugin-pagefooter-freedom.git"
+    },
+    "gitbook": {
+        "properties": {
+            "hide": {
+                "type": "boolean",
+                "title": "隐藏页脚",
+                "default": false,
+                "required": false
+            },
+            "modify_label": {
+                "type": "string",
+                "title": "修订日期标签",
+                "default": "Last modified time: ",
+                "required": false
+            },
+            "modify_format": {
+                "type": "string",
+                "title": "修订日期格式",
+                "default": "YYYY-MM-DD HH:mm:ss",
+                "required": false
+            },
+            "copyright": {
+                "type": "string",
+                "title": "版权信息",
+                "default": "",
+                "required": false
+            }
+        }
+    },
+    "dependencies": {
+        "moment": "^2.10.6"
+    }
+}
